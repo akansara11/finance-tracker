@@ -323,7 +323,8 @@ const SHEET_NAME       = 'NetWorth'; // the tab name inside the Sheet
 // ==============================================
 
 const SCOPES = 'https://www.googleapis.com/auth/spreadsheets';
-const COL_ORDER = ['date','chase_checking','wf_checking','fid1','fid2','trowe','vanguard','mutual_funds','trading','splitwise','chase_cc','other_cc','mortgage','total'];
+const SEED=[]; // Seed data lives in your Google Sheet, not in this file
+ const COL_ORDER = ['date','chase_checking','wf_checking','fid1','fid2','trowe','vanguard','mutual_funds','trading','splitwise','chase_cc','other_cc','mortgage','total'];
 let tokenClient=null, accessToken=null, userEmail=null, syncMode='offline'; // 'synced' | 'local' | 'offline'
 
 const fmtFull=v=>(v<0?'-$':'$')+Math.abs(Math.round(v)).toLocaleString();
